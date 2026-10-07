@@ -7,7 +7,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const migrationsDir = path.join(__dirname, '../database/migrations');
+const migrationsDir = path.join(__dirname, '../../database/migrations');
 
 const dbName = process.env.DB_NAME || 'flux_corp';
 const baseConfig = {
